@@ -4,9 +4,9 @@ In this repo, I share a select number of works I completed while at UVA's Biocom
 
 ## Fairfax  
 
-In this project, my colleagues and I worked county government officials to develop a project that would help combat health disparities and boost economic mobility for underserved communities in Fairfax County, VA. 
+In this project, my colleagues and I worked county government officials to develop a project that would help combat health disparities and boost economic mobility for underserved communities in Fairfax County, VA. Below is an example of how we have used network analysis to identify gaps in previous work on Fairfax County. 
 
-Link:
+Link: https://brandonleekramer.github.io/biocomplexity/ffx-eo-indicator-network.html
 
 ## OSS
 

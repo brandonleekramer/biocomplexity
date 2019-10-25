@@ -10,4 +10,4 @@ Link: https://brandonleekramer.github.io/biocomplexity/ffx-eo-indicator-network.
 
 ## OSS
 
-In this project, my colleagues and I used web scraping, APIs and network analysis to analyze the growth of open-source software on GitHub. These files show my ability to use text analysis tools for restructuring data; using SQL to read, write and restructure data tables; and to conduct basic descriptive analyses on a network of 3 million nodes and 9 million edges.
+In this project, my colleagues and I used web scraping and network analysis to analyze the growth of open-source software on GitHub. These files show my ability to use text analysis tools for restructuring data; using SQL to read, write and restructure data tables; and to conduct basic descriptive analyses on a network of 3 million nodes and 9 million edges.

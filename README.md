@@ -1,6 +1,6 @@
 # UVA Biocomplexity (Select Works)
 
-In this repo, I share a select number of works I completed while at UVA's Biocomplexity Institute and Initiative. 
+In this repo, I share a select number of works I have worked on while at UVA's Biocomplexity Institute and Initiative. 
 
 ## Fairfax  
 

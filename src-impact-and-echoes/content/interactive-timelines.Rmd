@@ -1,0 +1,81 @@
+---
+title: "Interactive Timelines of Nutrition, Food and Health"
+author: "Cathie Wotecki, Brandon Kramer, Vicki Lancaster and Sam Cohen"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+for (pkg in c("ggplot2", "scales", "lubridate", "googlesheets", "timevis", "googleVis", "tidyverse")) {library(pkg, character.only = TRUE)}
+```
+
+Next, we decided to establish a basic timeline of major events in the nutrition sciences over time. We decided to break this down into three distinct timelines based on science, politics and the social.
+
+**Here is the science timeline...**
+
+```{r science timeline, warning=FALSE, message=FALSE, fig.width=12, fig.height=14}
+#(my_sheets <- gs_ls())
+timeline_data <- gs_url("https://docs.google.com/spreadsheets/d/12Cftx0KGACFJ60K8WRhgkDx46ifc34BY_I8iLFffC3I/edit#gid=0")
+
+science_timeline <- timeline_data %>% gs_read(ws = "timeline") %>% 
+  filter(domain == "Science" | domain == "All")
+
+timevis(science_timeline)
+```
+
+
+**Here is the political timeline...** 
+
+```{r policy timeline, warning=FALSE, message=FALSE, fig.width=9.5, fig.height=12}
+timeline_data <- gs_url("https://docs.google.com/spreadsheets/d/12Cftx0KGACFJ60K8WRhgkDx46ifc34BY_I8iLFffC3I/edit#gid=0")
+
+policy_timeline <- timeline_data %>% 
+  gs_read(ws = "timeline") %>% filter(domain == "Policy" | domain == "All")
+
+timevis(policy_timeline)
+```
+
+**Here is the social timeline...** 
+
+```{r social events timeline, warning=FALSE, message=FALSE, fig.width=9.5, fig.height=7}
+timeline_data <- gs_url("https://docs.google.com/spreadsheets/d/12Cftx0KGACFJ60K8WRhgkDx46ifc34BY_I8iLFffC3I/edit#gid=0")
+
+social_timeline <- timeline_data %>% 
+  gs_read(ws = "timeline") %>% filter(domain == "Social")
+
+timevis(social_timeline)
+```
+
+**And here is a summarized or selective timeline of events...** 
+
+```{r general timeline, fig.width=9.5, fig.height=7}
+timeline_data <- gs_url("https://docs.google.com/spreadsheets/d/12Cftx0KGACFJ60K8WRhgkDx46ifc34BY_I8iLFffC3I/edit#gid=0")
+
+summarized_timeline <- timeline_data %>% 
+  gs_read(ws = "timeline") %>% filter(summary == "Summary")
+
+timevis(summarized_timeline)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
